@@ -2,18 +2,22 @@
   "name": "test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@anikin/parcel-transformer-handlebars": "^1.0.2",
     "parcel": "^2.8.3"
   },
   "dependencies": {
+    "@parcel/transformer-inline-string": "^2.8.3",
+    "handlebars": "^4.7.7",
+    "parcel-transformer-hbs": "^1.0.4",
     "sass": "^1.61.0"
   }
 }

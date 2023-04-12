@@ -1,4 +1,9 @@
-import {sum} from './utils/sum';
+import tpl from './index.hbs'
 
-const root = document.querySelector('#root');
-root.textContent = sum(6, -1).toString();
+console.log(tpl);
+
+const res = tpl({
+    name: "Ilya"
+})
+
+document.getElementById('root').innerHTML = res;
