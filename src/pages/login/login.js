@@ -1,16 +1,31 @@
-import headTmp from '../../component/base/head.hbs'
-import submitButtonTmp from '../../component/base/buttons/submitButton/template.hbs'
-import './login.module.scss'
+import {submitButtonTmp} from "../../component/base/buttons/submitButton/submitButton";
+import {inputTmp} from "../../component/base/input/authInput/authInput";
+import loginTmp from "./login.hbs";
+import * as classes from "./login.module.scss";
+import {linkTmp} from "../../component/base/link/link";
 
-console.log(headTmp);
 
-const head = headTmp({
-    title: "Login",
+const login = loginTmp({
+    form: classes.form,
+    loginInput: inputTmp({
+        name: "Логин",
+    }),
+    passwordInput: inputTmp({
+        name: "Пароль",
+    }),
+    bottom: `      
+             <div class="${classes.divButton}">
+                ${submitButtonTmp({
+                    text: "Войти",
+                })}              
+                ${linkTmp({
+                    text: "Нет аккаунта?",
+                    ref: "/registration",
+                })}              
+             </div>         
+    `
 })
 
-const button = submitButtonTmp({
-    text: "Login",
-})
 
-document.querySelector('head').innerHTML = head;
-document.querySelector('body').innerHTML = button;
+document.querySelector('body').innerHTML = login;
+
