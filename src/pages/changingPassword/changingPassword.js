@@ -1,4 +1,4 @@
-import {inputTmp} from "../../component/base/input/authInput/authInput";
+import {authInputTmp} from "../../component/base/input/authInput/authInput";
 import changingPasswordTmp from "../changingPassword/changingPassword.hbs";
 import * as classes from "../changingPassword/changingPassword.module.scss";
 import {submitButtonTmp} from "../../component/base/buttons/submitButton/submitButton";
@@ -6,15 +6,15 @@ import {submitButtonTmp} from "../../component/base/buttons/submitButton/submitB
 const changingPassword = changingPasswordTmp({
     form: classes.form,
     image: `<img class="${classes.image}" src="../../../static/img/Union.png" alt="Photo">`,
-    oldPassword: inputTmp({
+    oldPassword: authInputTmp({
        name: "Старый пароль",
        placeholder: "•••••••••••",
     }),
-    newPassword: inputTmp({
+    newPassword: authInputTmp({
        name: "Новый пароль",
        placeholder: "•••••••••••",
     }),
-    doubleNewPassword: inputTmp({
+    doubleNewPassword: authInputTmp({
        name: "Повторите новый пароль",
        placeholder: "•••••••••••",
     }),
