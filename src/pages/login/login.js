@@ -1,15 +1,15 @@
 import {submitButtonTmp} from "../../component/base/buttons/submitButton/submitButton";
-import {inputTmp} from "../../component/base/input/authInput/authInput";
+import {authInputTmp} from "../../component/base/input/authInput/authInput";
 import loginTmp from "./login.hbs";
 import * as classes from "./login.module.scss";
 import {linkTmp} from "../../component/base/link/link";
 
 const login = loginTmp({
     form: classes.form,
-    loginInput: inputTmp({
+    loginInput: authInputTmp({
         name: "Логин",
     }),
-    passwordInput: inputTmp({
+    passwordInput: authInputTmp({
         name: "Пароль",
     }),
     bottom: `      
