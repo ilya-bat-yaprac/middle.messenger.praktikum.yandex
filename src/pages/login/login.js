@@ -4,7 +4,6 @@ import loginTmp from "./login.hbs";
 import * as classes from "./login.module.scss";
 import {linkTmp} from "../../component/base/link/link";
 
-
 const login = loginTmp({
     form: classes.form,
     loginInput: authInputTmp({
