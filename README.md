@@ -16,8 +16,8 @@
 - `git clone https://github.com/Belovus/middle.messenger.praktikum.yandex.git`,
 - `cd middle.messenger.praktikum.yandex` — перейти в директорию с проектом,
 - `git checkout sprint_1` — перейти на ветку разработки,
-- `npm install` — установить зависимости,
-- `npm run start` — запустить сервер,
+- `yarn install` — установить зависимости,
+- `yarn dev` — запустить сервер,
 - [http://localhost:3000](http://localhost:3000) — сервер запущен на порту 3000.
 
 
