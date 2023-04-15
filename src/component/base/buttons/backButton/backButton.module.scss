@@ -1,0 +1,18 @@
+.backButton {
+  border: none;
+  background: transparent;
+  align-self: center;
+
+  cursor: pointer;
+}
+
+.container {
+  margin: 0;
+  position: absolute;
+  height: 100%;
+  width: 100px;
+  background-color: #FBFBFB;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
