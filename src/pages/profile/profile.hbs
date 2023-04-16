@@ -1,11 +1,11 @@
-<form class="{{form}}">
-    {{{image}}}
-    <p>Иван</p>
-    {{{emailInput}}}
-    {{{loginInput}}}
-    {{{nameInput}}}
-    {{{surnameInput}}}
-    {{{chatNameInput}}}
-    {{{telephoneInput}}}
-    {{{bottom}}}
-</form>
+{{{backButton}}}
+<div class={{containerClass}}>
+    <form class="{{formClass}}">
+        {{{image}}}
+        <p>Иван</p>
+        {{#each inputs}}
+            {{{this}}}
+        {{/each}}
+        {{{bottom}}}
+    </form>
+</div>

@@ -6,6 +6,7 @@
 .image {
   width: 40px;
   height: 40px;
+  padding: 45px;
 }
 
 .userName {
@@ -19,18 +20,21 @@
 }
 
 .form {
-  display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-
+  flex-direction: column;
+  display: flex;
+  width: 510px;
   font-size: 13px;
   line-height: 13px;
 }
 
 .divLink {
   display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding-top: 55px;
   flex-direction: column;
-  margin-top: 60px;
 }
 
 .divLinkItem {
@@ -45,4 +49,41 @@
   margin-bottom: 40px;
   gap: 10px;
   align-items: center;
+}
+
+.imageContainer {
+  background-color: #EFEFEF;
+  border-radius: 100%;
+
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blueLinkClassName {
+  color: #3369F3;
+  justify-self: left;
+  font-size: 13px;
+  line-height: 13px;
+  text-decoration: none;
+  border-bottom: 1px solid #EAEAEA;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.redLinkClassName {
+  color: #FF0000;
+  justify-self: left;
+  font-size: 13px;
+  line-height: 13px;
+  text-decoration: none;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 100%;
 }
