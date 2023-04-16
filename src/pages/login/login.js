@@ -11,6 +11,7 @@ const login = loginTmp({
     }),
     passwordInput: authInputTmp({
         name: "Пароль",
+        type: "password",
     }),
     bottom: `      
              <div class="${classes.divButton}">
@@ -19,7 +20,7 @@ const login = loginTmp({
                 })}              
                 ${linkTmp({
                     text: "Нет аккаунта?",
-                    ref: "/registration",
+                    ref: "/pages/registration/registration.html",
                 })}              
              </div>         
     `

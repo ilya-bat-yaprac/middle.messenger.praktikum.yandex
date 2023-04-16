@@ -18,26 +18,32 @@ const profile = profileTmp({
     }),
     inputs: [
         profileInputTmp({
+            disabled: true,
             name: "Почта",
             placeholder: "pochta@yandex.ru",
         }),
         profileInputTmp({
+            disabled: true,
             name: "Логин",
             placeholder: "ivanivanov",
         }),
         profileInputTmp({
+            disabled: true,
             name: "Имя",
             placeholder: "Иван",
         }),
         profileInputTmp({
+            disabled: true,
             name: "Фамилия",
             placeholder: "Иванов",
         }),
         profileInputTmp({
+            disabled: true,
             name: "Имя в чате",
             placeholder: "Иван",
         }),
         profileInputTmp({
+            disabled: true,
             name: "Телефон",
             placeholder: "+7 (909) 967 30 30",
         })],

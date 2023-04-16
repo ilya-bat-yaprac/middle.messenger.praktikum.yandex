@@ -1,4 +1,10 @@
-<form class="{{form}}">
-    {{{infProfile}}}
-    {{{bottom}}}
-</form>
+{{{backButton}}}
+<div class={{containerClass}}>
+    <form class="{{formClass}}">
+        {{{image}}}
+        {{#each inputs}}
+            {{{this}}}
+        {{/each}}
+        {{{bottom}}}
+    </form>
+</div>
