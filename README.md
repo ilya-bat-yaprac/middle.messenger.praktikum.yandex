@@ -21,5 +21,6 @@
 - `yarn dev` — запустить сервер в девовском режиме,
 - `yarn start` — запустить сервер с помощью express,
 - [http://localhost:3000](http://localhost:3000) — сервер запущен на порту 3000.
+- [https://bubun9.netlify.app/](https://bubun9.netlify.app/) — сервер на Netlify.
 
 
