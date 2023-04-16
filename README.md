@@ -13,11 +13,12 @@
 
 Для запуска проекта необходимо выполнить следующие команды:
 
-- `git clone https://github.com/Belovus/middle.messenger.praktikum.yandex.git`,
+- `git clone https://github.com/ilya-bat-yaprac/middle.messenger.praktikum.yandex.git`,
 - `cd middle.messenger.praktikum.yandex` — перейти в директорию с проектом,
 - `git checkout sprint_1` — перейти на ветку разработки,
 - `yarn install` — установить зависимости,
-- `yarn dev` — запустить сервер,
+- `yarn dev` — запустить сервер в девовском режиме,
+- `yarn start` — запустить сервер с помощью express,
 - [http://localhost:3000](http://localhost:3000) — сервер запущен на порту 3000.
 
 
