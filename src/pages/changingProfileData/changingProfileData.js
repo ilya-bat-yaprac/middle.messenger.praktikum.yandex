@@ -18,27 +18,27 @@ const changingProfile = changingProfileTmp({
     }),
     inputs: [
         profileInputTmp({
-            name: "Почта",
+            name: "email",
             placeholder: "pochta@yandex.ru",
         }),
         profileInputTmp({
-            name: "Логин",
+            name: "login",
             placeholder: "ivanivanov",
         }),
         profileInputTmp({
-            name: "Имя",
+            name: "first_name",
             placeholder: "Иван",
         }),
         profileInputTmp({
-            name: "Фамилия",
+            name: "second_name",
             placeholder: "Иванов",
         }),
         profileInputTmp({
-            name: "Имя в чате",
+            name: "nickname",
             placeholder: "Иван",
         }),
         profileInputTmp({
-            name: "Телефон",
+            name: "phone",
             placeholder: "+7 (909) 967 30 30",
         })],
     bottom: `<div class="${classes.divButton}">
