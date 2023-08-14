@@ -1,0 +1,31 @@
+@import "src/styles/variables.scss";
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  color: $black-color;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid $background-white-color;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+
+  &::placeholder {
+    color: #A3A3A3;
+  }
+
+  &:hover {
+    border: 1px solid #bdbdbd;
+  }
+
+  &:active {
+    border: 1px solid #8d8d8d;
+  }
+}
+
+.div {
+  width: 280px;
+  margin-top: 20px;
+}
