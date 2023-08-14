@@ -14,7 +14,7 @@
 Для запуска проекта необходимо выполнить следующие команды:
 
 - `git clone https://github.com/ilya-bat-yaprac/middle.messenger.praktikum.yandex.git`,
-- `cd middle.messenger.praktikum.yandex` — перейти в директорию с проектом,
+- `cd middle.messenger.praktikum.yandex` — перейти в директорию с проектом практики,
 - `git checkout sprint_1` — перейти на ветку разработки,
 - `yarn install` — установить зависимости,
 - `yarn build` — билд проекта,
