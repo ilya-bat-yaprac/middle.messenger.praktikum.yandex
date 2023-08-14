@@ -17,7 +17,7 @@
 - `cd middle.messenger.praktikum.yandex` — перейти в директорию с проектом,
 - `git checkout sprint_1` — перейти на ветку разработки,
 - `yarn install` — установить зависимости,
-- `yarn build` — сбилдить проект,
+- `yarn build` — билд проекта,
 - `yarn dev` — запустить сервер в девовском режиме,
 - `yarn start` — запустить сервер с помощью express,
 - [http://localhost:3000](http://localhost:3000) — сервер запущен на порту 3000.
