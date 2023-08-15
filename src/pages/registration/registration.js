@@ -1,28 +1,28 @@
 import registrationTmp from "./registration.hbs"
 import * as classes from "./registartion.module.scss";
-import {inputTmp} from "../../component/base/input/authInput/authInput";
+import {authInputTmp} from "../../component/base/input/authInput/authInput";
 import {submitButtonTmp} from "../../component/base/buttons/submitButton/submitButton";
 import {linkTmp} from "../../component/base/link/link";
 
 
 const registration = registrationTmp({
     form: classes.form,
-    emailInput: inputTmp({
+    emailInput: authInputTmp({
         name: "Почта",
     }),
-    nameInput: inputTmp({
+    nameInput: authInputTmp({
         name: "Имя",
     }),
-    surNameInput: inputTmp({
+    surNameInput: authInputTmp({
         name: "Фамилия",
     }),
-    phoneInput: inputTmp({
+    phoneInput: authInputTmp({
         name: "Телефон",
     }),
-    passwordInput: inputTmp({
+    passwordInput: authInputTmp({
         name: "Пароль",
     }),
-    resetPasswordInput: inputTmp({
+    resetPasswordInput: authInputTmp({
         name: "Пароль (ещё раз)",
     }),
     bottom: `      
