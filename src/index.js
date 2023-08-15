@@ -1,9 +1,7 @@
-import tpl from './index.hbs'
-
-console.log(tpl);
+import tpl from './index.hbs';
 
 const res = tpl({
-    name: "Ilya"
-})
+  name: 'Ilya',
+});
 
 document.getElementById('root').innerHTML = res;

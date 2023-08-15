@@ -1,7 +1,7 @@
-import * as classes from "./link.module.scss"
-import tpl from './link.hbs'
+import * as classes from './link.module.scss';
+import tpl from './link.hbs';
 
 export const linkTmp = ({ ...props }) => tpl({
-    linkClassName: classes.blueLinkClassName,
-    ...props
+  linkClassName: classes.blueLinkClassName,
+  ...props,
 });
