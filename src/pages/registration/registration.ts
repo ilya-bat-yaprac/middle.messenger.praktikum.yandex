@@ -40,4 +40,7 @@ const registration = registrationTmp({
     `
 })
 
-document.querySelector('body').innerHTML = registration;
+const bodyElement = document?.querySelector('body');
+if (bodyElement) {
+    bodyElement.innerHTML = registration;
+}

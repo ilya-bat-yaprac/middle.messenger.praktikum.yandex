@@ -8,4 +8,7 @@ const error500 = error500Tmp ({
     linkText: "Назад к чатам"
 })
 
-document.querySelector('body').innerHTML = error500;
+const bodyElement = document?.querySelector('body');
+if (bodyElement) {
+    bodyElement.innerHTML = error500;
+}

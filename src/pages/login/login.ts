@@ -27,4 +27,7 @@ const login = loginTmp({
 })
 
 
-document.querySelector('body').innerHTML = login;
+const bodyElement = document?.querySelector('body');
+if (bodyElement) {
+    bodyElement.innerHTML = login;
+}

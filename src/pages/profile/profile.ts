@@ -66,4 +66,7 @@ const profile = profileTmp({
             </div>`
 })
 
-document.querySelector('body').innerHTML = profile;
+const bodyElement = document?.querySelector('body');
+if (bodyElement) {
+    bodyElement.innerHTML = profile;
+}
