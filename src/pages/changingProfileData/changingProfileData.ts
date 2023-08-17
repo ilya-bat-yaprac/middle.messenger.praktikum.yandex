@@ -1,12 +1,12 @@
-import changingPasswordTmp from "../changingPassword/changingPassword.hbs";
-import * as classes from "../changingPassword/changingPassword.module.scss";
+import changingProfileTmp from "../changingProfileData/changingProfileData.hbs";
+import * as classes from "./changingProfileData.module.scss";
 import {submitButtonTmp} from "../../component/base/buttons/submitButton/submitButton";
 import {backButton} from "../../component/base/buttons/backButton/backButton";
 import {imageTmp} from "../../component/base/image/image";
 import union from "../../../static/img/Union.png";
 import {profileInputTmp} from "../../component/base/input/profileInput/profileInput";
 
-const changingPassword = changingPasswordTmp({
+const changingProfile = changingProfileTmp({
     backButton: backButton,
     containerClass: classes.container,
     formClass: classes.form,
@@ -18,19 +18,28 @@ const changingPassword = changingPasswordTmp({
     }),
     inputs: [
         profileInputTmp({
-            type: "password",
-            name: "Старый пароль",
-            placeholder: "•••••••••",
+            name: "email",
+            placeholder: "pochta@yandex.ru",
         }),
         profileInputTmp({
-            type: "password",
-            name: "Новый пароль",
-            placeholder: "•••••••••••",
+            name: "login",
+            placeholder: "ivanivanov",
         }),
         profileInputTmp({
-            type: "password",
-            name: "Повторите новый пароль",
-            placeholder: "•••••••••••",
+            name: "first_name",
+            placeholder: "Иван",
+        }),
+        profileInputTmp({
+            name: "second_name",
+            placeholder: "Иванов",
+        }),
+        profileInputTmp({
+            name: "nickname",
+            placeholder: "Иван",
+        }),
+        profileInputTmp({
+            name: "phone",
+            placeholder: "+7 (909) 967 30 30",
         })],
     bottom: `<div class="${classes.divButton}">
                 ${submitButtonTmp({
@@ -40,4 +49,7 @@ const changingPassword = changingPasswordTmp({
             </div>`
 })
 
-document.querySelector('body').innerHTML = changingPassword;
+const bodyElement = document?.querySelector('body');
+if (bodyElement) {
+    bodyElement.innerHTML = changingProfile;
+}
