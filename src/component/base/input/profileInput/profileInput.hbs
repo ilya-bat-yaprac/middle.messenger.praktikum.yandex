@@ -1,4 +1,12 @@
 <div class="{{divClassName}}">
     <label class={{labelClassName}}>{{name}}</label>
-    <input class="{{inputClassName}}" type="{{type}}" name="{{name}}" placeholder="{{placeholder}}" {{#if disabled}} disabled {{/if}}>
+    <input
+            class="{{inputClassName}}"
+            type="{{type}}"
+            name="{{name}}"
+            placeholder="{{placeholder}}"
+            pattern="{{regex}}"
+            autofocus="{{autofocus}}"
+        {{#if disabled}} disabled {{/if}}
+    >
 </div>

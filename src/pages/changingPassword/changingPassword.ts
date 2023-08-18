@@ -5,8 +5,11 @@ import {backButton} from "../../component/base/buttons/backButton/backButton";
 import {imageTmp} from "../../component/base/image/image";
 import union from "../../../static/img/Union.png";
 import {profileInputTmp} from "../../component/base/input/profileInput/profileInput";
+import {validInput} from "../../../static/validInput";
 
 console.log(typeof union)
+
+const { password} = validInput
 
 const changingPassword = changingPasswordTmp({
     backButton: backButton,
@@ -23,16 +26,22 @@ const changingPassword = changingPasswordTmp({
             type: "password",
             name: "Старый пароль",
             placeholder: "•••••••••",
+            regex: password.regex,
+            required: password.required,
         }),
         profileInputTmp({
             type: "password",
             name: "Новый пароль",
             placeholder: "•••••••••••",
+            regex: password.regex,
+            required: password.required,
         }),
         profileInputTmp({
             type: "password",
             name: "Повторите новый пароль",
             placeholder: "•••••••••••",
+            regex: password.regex,
+            required: password.required,
         })],
     bottom: `<div class="${classes.divButton}">
                 ${submitButtonTmp({
