@@ -8,4 +8,7 @@ const error404 = error404Tmp ({
     linkText: "Назад к чатам"
 })
 
-document.querySelector('body').innerHTML = error404;
+const bodyElement = document?.querySelector('body');
+if (bodyElement) {
+    bodyElement.innerHTML = error404;
+}

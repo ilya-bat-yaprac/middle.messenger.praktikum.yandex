@@ -1,12 +1,14 @@
-import changingProfileTmp from "../changingProfileData/changingProfileData.hbs";
-import * as classes from "./changingProfileData.module.scss";
+import changingPasswordTmp from "../changingPassword/changingPassword.hbs";
+import * as classes from "../changingPassword/changingPassword.module.scss";
 import {submitButtonTmp} from "../../component/base/buttons/submitButton/submitButton";
 import {backButton} from "../../component/base/buttons/backButton/backButton";
 import {imageTmp} from "../../component/base/image/image";
 import union from "../../../static/img/Union.png";
 import {profileInputTmp} from "../../component/base/input/profileInput/profileInput";
 
-const changingProfile = changingProfileTmp({
+console.log(typeof union)
+
+const changingPassword = changingPasswordTmp({
     backButton: backButton,
     containerClass: classes.container,
     formClass: classes.form,
@@ -18,28 +20,19 @@ const changingProfile = changingProfileTmp({
     }),
     inputs: [
         profileInputTmp({
-            name: "email",
-            placeholder: "pochta@yandex.ru",
+            type: "password",
+            name: "Старый пароль",
+            placeholder: "•••••••••",
         }),
         profileInputTmp({
-            name: "login",
-            placeholder: "ivanivanov",
+            type: "password",
+            name: "Новый пароль",
+            placeholder: "•••••••••••",
         }),
         profileInputTmp({
-            name: "first_name",
-            placeholder: "Иван",
-        }),
-        profileInputTmp({
-            name: "second_name",
-            placeholder: "Иванов",
-        }),
-        profileInputTmp({
-            name: "nickname",
-            placeholder: "Иван",
-        }),
-        profileInputTmp({
-            name: "phone",
-            placeholder: "+7 (909) 967 30 30",
+            type: "password",
+            name: "Повторите новый пароль",
+            placeholder: "•••••••••••",
         })],
     bottom: `<div class="${classes.divButton}">
                 ${submitButtonTmp({
@@ -49,4 +42,7 @@ const changingProfile = changingProfileTmp({
             </div>`
 })
 
-document.querySelector('body').innerHTML = changingProfile;
+const bodyElement = document?.querySelector('body');
+if (bodyElement) {
+    bodyElement.innerHTML = changingPassword;
+}

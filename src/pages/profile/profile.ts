@@ -10,6 +10,7 @@ const profile = profileTmp({
     backButton: backButton,
     containerClass: classes.container,
     formClass: classes.form,
+    id: 'profile-form',
     image: imageTmp({
         imageSrc: union,
         imageAlt: "Photo",
@@ -66,4 +67,7 @@ const profile = profileTmp({
             </div>`
 })
 
-document.querySelector('body').innerHTML = profile;
+const bodyElement = document?.querySelector('body');
+if (bodyElement) {
+    bodyElement.innerHTML = profile;
+}

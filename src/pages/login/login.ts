@@ -1,11 +1,13 @@
-import {submitButtonTmp} from "../../component/base/buttons/submitButton/submitButton";
-import {authInputTmp} from "../../component/base/input/authInput/authInput";
+import {submitButtonTmp} from '../../component/base/buttons/submitButton/submitButton';
+import {authInputTmp} from '../../component/base/input/authInput/authInput';
 import loginTmp from "./login.hbs";
 import * as classes from "./login.module.scss";
-import {linkTmp} from "../../component/base/link/link";
+import {linkTmp} from '../../component/base/link/link';
+import {handleFormSubmit} from "@/utils/utils";
 
 const login = loginTmp({
     form: classes.form,
+    id: 'login-form',
     loginInput: authInputTmp({
         name: "Логин",
     }),
@@ -27,4 +29,10 @@ const login = loginTmp({
 })
 
 
-document.querySelector('body').innerHTML = login;
+const bodyElement = document?.querySelector('body');
+if (bodyElement) {
+    bodyElement.innerHTML = login;
+}
+
+const applicantForm = document.getElementById('login-form');
+applicantForm.addEventListener('submit', handleFormSubmit)

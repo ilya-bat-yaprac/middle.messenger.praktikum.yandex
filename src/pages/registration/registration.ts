@@ -7,6 +7,7 @@ import {linkTmp} from "../../component/base/link/link";
 
 const registration = registrationTmp({
     form: classes.form,
+    id: 'registration-form',
     emailInput: authInputTmp({
         name: "Почта",
     }),
@@ -40,4 +41,7 @@ const registration = registrationTmp({
     `
 })
 
-document.querySelector('body').innerHTML = registration;
+const bodyElement = document?.querySelector('body');
+if (bodyElement) {
+    bodyElement.innerHTML = registration;
+}
