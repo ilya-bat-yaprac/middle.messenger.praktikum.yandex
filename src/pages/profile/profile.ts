@@ -10,6 +10,7 @@ const profile = profileTmp({
     backButton: backButton,
     containerClass: classes.container,
     formClass: classes.form,
+    id: 'profile-form',
     image: imageTmp({
         imageSrc: union,
         imageAlt: "Photo",
